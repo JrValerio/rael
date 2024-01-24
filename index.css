@@ -1,0 +1,180 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f7e7d7;
+  background-image: url("/foto/10707559-ilustracao-de-fundo-de-banner-de-baloes-de-feliz-aniversario-de-cor-brilhante-gratis-foto.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container-mensagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.container-audio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  margin-bottom: 20px;
+  gap: 16px;
+}
+
+.mensagem {
+  font-family: "Dancing Script", cursive;
+  font-size: 36px;
+  color: #0c0c0c;
+  text-shadow: 2px 2px 4px #333;
+  margin: 20px;
+  padding: 20px;
+  animation: fadeIn 2s ease-in-out;
+  background: rgba(255, 255, 255, 0.315);
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #666;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.galeria-imagens img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0px 0px 10px #666;
+}
+
+.galeria-imagens {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.galeria-imagens img {
+  margin: 10px;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+}
+
+.audiocontrol {
+  font-size: 16px;
+  color: #12026d;
+  background-color: #6bb8f7;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.audiocontrol:hover {
+  background-color: #3c7ebd;
+}
+
+.audiocontrol:focus {
+  box-shadow: 0 0 0 2px rgba(121, 107, 247, 0.5);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Esconder as imagens por padrão */
+.mySlides {
+  display: none;
+}
+
+/* Botões de Navegação */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Posição dos botões "next" e "prev" */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+}
+
+/* Fundo para os botões */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Indicadores de posição do slideshow */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+@media (max-width: 600px) {
+  .galeria-imagens img {
+    max-width: 100px;
+  }
+
+  .mensagem {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .galeria-imagens img {
+    max-width: 120px;
+  }
+}
+
+@media (min-width: 900px) {
+  .galeria-imagens {
+    justify-content: space-around;
+  }
+}
